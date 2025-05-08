@@ -7,7 +7,7 @@ Compile LaTeX documents easily by installing **all texlive packages** in a docke
 1. Pull the docker image: `docker pull dlazesz/texlive-full`
 2. Put [`latexdockercmd.sh`](latexdockercmd.sh) into the PATH and add execute bit (`chmod +x latexdockercmd.sh`)
 3. Go to the directory with the LaTeX sources
-4. Compile: `latexdockercmd.sh latexmk -cd -f -jobname=output -xelatex -outdir=./compile -auxdir=./compile -interaction=batchmode -halt-on-error -pdf ./main.tex`
+4. Compile: `latexdockercmd.sh latexmk -cd -f -jobname=output -xelatex -outdir=./compile -auxdir=./compile -interaction=batchmode -halt-on-error -pdfxe ./main.tex`
 5. The outut is at: `compile/output.pdf`
 6. Profit! :)
 
